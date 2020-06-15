@@ -26,7 +26,7 @@ public:
         }else{
             if(val < root->val && root->left != NULL){
                 return helperSearch(root->left, val);
-            }else if(root->right != NULL){
+            }else if(val > root->val && root->right != NULL){
                 return helperSearch(root->right, val);
             }
         }
